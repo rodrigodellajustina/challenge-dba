@@ -100,6 +100,6 @@ CREATE TABLE enrollment (
 
 
 ## Entrega por Rodrigo Della Justina
-1. Vídeo sobre decisão tomada sobre o Tenant ([![Thumbnail do Vídeo](https://img.youtube.com/vi/SEU_VIDEO_ID/0.jpg)](https://youtu.be/CSTZSZ7pbcw)
+1. Vídeo sobre decisão tomada sobre o Tenant ([![Vídeo]](https://youtu.be/CSTZSZ7pbcw)
 
 
