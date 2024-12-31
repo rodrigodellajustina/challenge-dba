@@ -2,8 +2,6 @@
  * Criação de uuid e chaves estrangeiras e aplicação da 3º forma normal 
  * */
 
-
-
 --1)----------------PERSON-----------------
 
 --drop table person 
@@ -112,7 +110,7 @@ REFERENCES institution(id);
 CREATE TABLE enrollment (
     id BIGSERIAL not null,
 	enrollment_uuid UUID DEFAULT uuid_generate_v4(),
-    institution_id INTEGER,
+    course_id INTEGER,
     person_id INTEGER not null,
     enrollment_date DATE not null,
     status VARCHAR(20) not null
@@ -130,11 +128,11 @@ ALTER TABLE enrollment ADD CONSTRAINT pk_enrollment_id PRIMARY KEY (id)
 create unique index idx_unique_enrollment_001 on enrollment (enrollment_uuid);
 
 
--- chave estrangeira para garantir integridade referencial entre instituição e a matricula
+-- chave estrangeira para garantir integridade referencial entre curso e a matricula
 ALTER TABLE enrollment
-ADD CONSTRAINT fk_institution_enrollment
-FOREIGN KEY (institution_id)
-REFERENCES institution(id);
+ADD CONSTRAINT fk_course_enrollment
+FOREIGN KEY (course_id)
+REFERENCES course(id);
 
 -- chave estrangeira para garantir integridade referencial entre person e a matricula
 ALTER TABLE enrollment
@@ -150,7 +148,7 @@ REFERENCES person(id);
  * A tabela enrollment agora é normalizada em 3NF e as regras de integridade são aplicadas corretamente com a restrição de unicidade.
  * */
 ALTER TABLE enrollment
-ADD CONSTRAINT ctt_unique_person_per_institution UNIQUE (institution_id, person_id);
+ADD CONSTRAINT ctt_unique_person_per_institution UNIQUE (course_id, person_id);
 ------------------------------------------------------------------------------------
 
 
