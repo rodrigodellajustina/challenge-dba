@@ -12,7 +12,7 @@
  * 
  * */
 
-drop table enrollment
+--drop table enrollment
 
 -- Alteração da tabela para ser particionada
 CREATE TABLE enrollment (
