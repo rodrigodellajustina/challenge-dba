@@ -1,4 +1,8 @@
 /*
+ * /*Vídeo em README do repositório*/
+ * https://youtu.be/CSTZSZ7pbcw 
+ *
+ *
  * Existem três alternativas principais para implementar um ambiente multi-tenant 
  * com isolamento de dados em uma única base de dados:
  *
