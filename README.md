@@ -97,3 +97,9 @@ CREATE TABLE enrollment (
 2. Faça o push do código desenvolvido no seu Github
 3. Informe ao recrutador quando concluir o desafio junto com o link do repositório
 4. Após revisão do projeto, em conjunto com a equipe técnica, deixe seu repositório privado
+
+
+## Entrega por Rodrigo Della Justina
+1. Vídeo sobre decisão tomada sobre o Tenant ([![Thumbnail do Vídeo](https://img.youtube.com/vi/SEU_VIDEO_ID/0.jpg)](https://youtu.be/CSTZSZ7pbcw)
+
+
